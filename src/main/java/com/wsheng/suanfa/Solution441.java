@@ -10,14 +10,12 @@ package com.wsheng.suanfa;
 public class Solution441 {
 
     public static int arrangeCoins(int n) {
-        if (n == 0)
-            return 0;
         int i = 0;
         while (n > 0) {
             i++;
             n -= i;
         }
-        return i - 1;
+        return n == 0? i : i - 1;
     }
 
     public int arrangeCoins2(int n) {
