@@ -57,5 +57,13 @@ public class Solution203 {
         return dummyHead.next;
     }
 
+    //递归
+    public ListNode removeElements3 (ListNode head, int val){
+        if (head == null)
+            return null;
+        head.next = removeElements3(head.next,val);
+            return head.val == val ? head.next : head;
+    }
+
 
 }
