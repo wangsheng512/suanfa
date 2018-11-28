@@ -7,6 +7,8 @@ package com.wsheng.suanfa;
  */
 public class Solution458 {
 
+
+
     public int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
         if (buckets <= 1)
             return 0;
