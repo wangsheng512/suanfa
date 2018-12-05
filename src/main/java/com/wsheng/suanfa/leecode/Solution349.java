@@ -33,8 +33,26 @@ public class Solution349 {
         return res;
     }
 
+    public static int[] intersection2(int[] nums1, int[] nums2) {
+        TreeSet<Integer> treeSet = new TreeSet<>();
+        for (int num : nums1)
+            treeSet.add(num);
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int num :nums2){
+            if (treeSet.contains(num)){
+                list.add(num);
+                treeSet.remove(num);
+            }
+        }
+        int[] res = new int[list.size()];
+        for (int i = 0;i<list.size();i++){
+            res[i] = list.get(i);
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
-        int[] a = Solution349.intersection(new int[]{1,2,3},new int[]{1,4,5});
+        int[] a = Solution349.intersection2(new int[]{1,2,2,1},new int[]{2,2});
         for (int i = 0 ;i<a.length;i++){
             int b = a[i];
             System.out.println(b);

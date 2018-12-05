@@ -13,8 +13,6 @@ public class Solution482 {
         StringBuffer stringBuffer = new StringBuffer(result);
         int length = 0;
         for (int i = ss.length-1; i >= 0; i--) {
-            if (ss[i] - '-' == 0) continue;
-            if (ss[i] - 'a' >= 0) ss[i] = (char)(ss[i] - 32);
             stringBuffer.append(ss[i]);
             length ++;
             if (length == K) {
@@ -53,8 +51,9 @@ public class Solution482 {
             stringBuffer.append(c[i]);
         }
         String aa = "2-4A0r7-4k";
-        String bb = aa.toUpperCase();
-        System.out.println(bb);
+        StringBuffer stringBuffer1 = new StringBuffer(aa);
+        stringBuffer1.reverse();
+        System.out.println(stringBuffer1.toString());
         System.out.println(stringBuffer.toString());
     }
 }
