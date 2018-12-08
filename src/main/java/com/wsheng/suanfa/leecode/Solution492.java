@@ -12,8 +12,8 @@ public class Solution492 {
         int num = area;
         int[] result = new int[2];
         for (int i = 1; i <= end; i++) {
-            if (area % i == 0) {
-                int j = area / i;
+            if (area % i == 0) {  //取余数
+                int j = area / i;  //商的整数
                 int abs = j - i;
                 if (abs < num) {
                     num = abs;
@@ -23,5 +23,11 @@ public class Solution492 {
             }
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        int area = 8;
+        int end = (int)Math.sqrt(area);
+        System.out.println(end);
     }
 }
