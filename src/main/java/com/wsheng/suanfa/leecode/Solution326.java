@@ -4,6 +4,7 @@ package com.wsheng.suanfa.leecode;
  * @Auther: wsheng
  * @Date: 2018/10/27 22:36
  * @Description:
+ * 给定一个整数，写一个函数来判断它是否是 3 的幂次方。
  */
 public class Solution326 {
 
