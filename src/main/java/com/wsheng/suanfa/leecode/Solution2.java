@@ -7,6 +7,4 @@ package com.wsheng.suanfa.leecode;
  */
 public class Solution2 {
 
-
-
 }

@@ -1,4 +1,4 @@
-package com.wsheng.suanfa.leecode;
+package com.wsheng.suanfa.leecode.Int;
 
 /**
  * @Auther: wsheng
