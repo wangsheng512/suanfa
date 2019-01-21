@@ -19,5 +19,6 @@ public class Solution628 {
 
     public static void main(String[] args) {
         Solution628.maximumProduct(new int[3]);
+
     }
 }
